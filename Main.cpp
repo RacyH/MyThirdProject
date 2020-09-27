@@ -38,7 +38,7 @@ int main()
 	// I would like to note that I understand that there is a way to do this a little easier using cmath, but I wanted to do it this way just in case I had to switch between population or sample data.
 
 	cout << "These are the numbers that are provided:\n" << x << " " << y << " " << a << " " << b << endl;
-	cout << "This is the sum of the numbers provided:\n" << sum << endl; //This set of lines is just the outputs for the numbers in the inFile, and those calculated form them
+	cout << "This is the sum of the numbers provided:\n" << sum << endl; //This set of lines is just the outputs for the numbers in the inFile, and those calculated from them
 	cout << "This is the average of the numbers provided:\n" << setprecision(6) << mean << endl;
 	cout << "This is the standard deviation of the numbers provided:\n" << stD << "\n\n";
 	cout << "Type four random numbers. Please put a space or press enter between your numbers.\n";
