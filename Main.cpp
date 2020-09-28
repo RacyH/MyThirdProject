@@ -31,6 +31,8 @@ int main()
 	outFile.open(outputFileName);	// Places output file in the project folder
 	inFile >> x >> y >> a >> b;		// This pulls the variables from the input file
 	int sum = x + y + a + b;		//Calculates the sum of numbers
+	outFile << x << " " << y << " " << a << " " << b; //This prints the numbers from the inMeanStd.dat into the outMeanStd.dat file
+	
 	float mean = sum / 4.000;		//Calculates the average/mean of the numbers - The next line calculates the variances of the various numbers, then squares them.
 	float xvar = (x - mean) * (x - mean), yvar = (y - mean) * (y - mean), avar = (a - mean) * (a - mean), bvar = (b - mean) * (b - mean);
 	float Evar = xvar + yvar + avar + bvar; //This is just to calculate the sum of the variances squared.
@@ -44,7 +46,6 @@ int main()
 	cout << "Type four random numbers. Please put a space or press enter between your numbers.\n";
 
 	cin >> c >> d >> e >> f; 
-	outFile << c << " " << d << " " <<  e << " " << f; //This prints the numbers you entered into the outMeanStd.dat file
 	cout << "The numbers you chose were:\n" << c << " " << d << " " << e << " " << f << endl;
 
 	// These next lines are just defining things after you give the numbers, such as the sum, mean, variance, and so forth.
